@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".TinhToanActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF9800"
+        android:gravity="center"
+        android:text="Tính Toán"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/edSoA"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@color/purple_200"
+        android:hint="Nhập số A"
+        android:paddingLeft="5dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/edSoB"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@color/purple_200"
+        android:hint="Nhập số B"
+        android:paddingLeft="5dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:textSize="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btCong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:text="+"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/btTru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:layout_marginRight="5dp"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/btNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="*"
+            android:layout_marginRight="5dp"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/btChia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/"
+            android:layout_marginRight="5dp"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/tvKetQua"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#8BC34A"
+        android:gravity="center"
+        android:text="Kết quả"
+        android:textSize="30sp"/>
+</LinearLayout>
